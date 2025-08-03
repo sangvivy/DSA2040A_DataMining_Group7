@@ -1,12 +1,3 @@
-industry_id,industry_name
-4,Software Development
-96,IT Services and IT Consulting
-118,Computer and Network Security
-3101,Desktop Computing Software Products
-3102,IT System Custom Software Development
-3104,IT System Installation and Disposal
-3106,IT System Data Services
-3107,IT System Testing and Evaluation
-3130,Data Security Software Products
-3231,Information Technology & Services
-3252,Climate Data and Analytics
+version https://git-lfs.github.com/spec/v1
+oid sha256:882b540fdfb23f93b5f66c86220eafd05cddcc36de57ecbf724f685cda44a86b
+size 416
