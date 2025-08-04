@@ -121,10 +121,15 @@ Track job postings over time (monthly trends)
 Compare growth in top IT domains using line plots
 
 Generated Visualizations
-
+-Job Postings
 ![alt text](image.png)
+
+-Job Title frequency plot
 ![alt text](image-1.png)
+
+-wordcloud
 ![alt text](image-2.png)
+
 ## 📈 Key Findings
 
 ### Market Distribution
