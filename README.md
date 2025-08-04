@@ -88,7 +88,43 @@ python predict_it_trends.py
 # 5. Generate comprehensive report
 python generate_comprehensive_report.py
 ```
+## Exploratory Data Analysis (EDA)
+The EDA focuses on understanding the structure, quality, and trends in IT job postings. Key steps include:
 
+Data Overview:
+
+-Load and inspect the processed_it_jobs.csv dataset
+-Check dataset shape, columns, and sample records
+-Identify missing values and duplicates
+-Basic Statistics
+-Total job postings
+-Unique companies and job titles
+-Date range of job postings
+-Domain & Experience Analysis
+-Distribution of IT job domains (e.g., Data Science, DevOps, Cloud)
+-Required experience levels per domain
+-Visualization: Bar charts showing domain and experience distributions
+-Work Type & Remote Opportunities
+-Analyze work types (Full-time, Contract, Internship)
+-Identify remote vs on-site opportunities
+
+Skill Demand
+
+Count mentions of top IT skills in job titles & descriptions
+
+Visualization: Top 15 in-demand skills in a horizontal bar chart
+
+Temporal Trends
+
+Track job postings over time (monthly trends)
+
+Compare growth in top IT domains using line plots
+
+Generated Visualizations
+
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 ## 📈 Key Findings
 
 ### Market Distribution
