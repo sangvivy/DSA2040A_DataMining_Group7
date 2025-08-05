@@ -1,7 +1,7 @@
 """
 IT Job Market Prediction Model (2025-2030)
 This script creates predictive models to forecast future IT job market trends,
-including most marketable skills, job domains, and career opportunities.
+including most marketable skills, job domains, and, career opportunities.
 """
 
 import pandas as pd
