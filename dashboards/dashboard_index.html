@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Job Market Dashboard Suite</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .header {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 400;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1em;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+        .dashboard-card {
+            background: #ffffff;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .card-header {
+            padding: 20px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .card-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .card-title {
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #2c3e50;
+            margin: 0;
+        }
+        .card-description {
+            color: #666666;
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .dashboard-link {
+            display: inline-block;
+            background: #9b9b99;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .dashboard-link:hover {
+            background: #0056b3;
+        }
+        .stats {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+        }
+        .stat-item {
+            display: inline-block;
+            margin: 0 20px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #007bff;
+        }
+        .stat-label {
+            color: #666666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .footer {
+            background: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            border-radius: 0 0 8px 8px;
+        }
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            .stat-item {
+                display: block;
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>IT Job Market Dashboards</h1>
+            <p>Interactive Analysis of 50,000+ IT Job Opportunities</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">50,000+</div>
+                <div class="stat-label">IT Jobs Analyzed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Interactive Dashboards</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Key Skills Tracked</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2025-2030</div>
+                <div class="stat-label">Prediction Timeline</div>
+            </div>
+        </div>
+        
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">Overview Dashboard</h3>
+                    <p class="card-description">Key metrics, total opportunities, and market summary</p>
+                </div>
+                <div class="card-body">
+                    <a href="overview_dashboard.html" class="dashboard-link">View Overview</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">Domain Analysis</h3>
+                    <p class="card-description">IT field distribution, market share, and domain trends</p>
+                </div>
+                <div class="card-body">
+                    <a href="domain_analysis_dashboard.html" class="dashboard-link">Explore Domains</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">Skills Demand</h3>
+                    <p class="card-description">In-demand skills, future trends, and growth analysis</p>
+                </div>
+                <div class="card-body">
+                    <a href="skills_demand_dashboard.html" class="dashboard-link">View Skills</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">4</div>
+                    <h3 class="card-title">Career Opportunities</h3>
+                    <p class="card-description">Experience levels, work types, and career paths</p>
+                </div>
+                <div class="card-body">
+                    <a href="career_opportunities_dashboard.html" class="dashboard-link">Explore Careers</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">5</div>
+                    <h3 class="card-title">Company Analysis</h3>
+                    <p class="card-description">Top hiring companies, industry focus, and trends</p>
+                </div>
+                <div class="card-body">
+                    <a href="company_analysis_dashboard.html" class="dashboard-link">View Companies</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">6</div>
+                    <h3 class="card-title">Future Predictions</h3>
+                    <p class="card-description">Growth forecasts for 2025-2030 and investment priorities</p>
+                </div>
+                <div class="card-body">
+                    <a href="predictions_dashboard.html" class="dashboard-link">See Predictions</a>
+                </div>
+            </div>
+            
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-icon">7</div>
+                    <h3 class="card-title">Complete Summary</h3>
+                    <p class="card-description">Comprehensive overview with all insights and action items</p>
+                </div>
+                <div class="card-body">
+                    <a href="comprehensive_summary_dashboard.html" class="dashboard-link">View Summary</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
