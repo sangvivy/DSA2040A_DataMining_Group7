@@ -1,7 +1,7 @@
 """
-IT Job Market Analysis and Insights
+IT Job Market Analysis and, Insights
 This script analyzes the processed IT job data to identify trends, 
-in-demand skills, and market opportunities.
+in-demand skills, and, market opportunities.
 Done by Vivian
 """
 
