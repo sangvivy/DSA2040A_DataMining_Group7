@@ -1,6 +1,6 @@
 """
 Comprehensive IT Job Market Analysis Report Generator
-Creates a professional PDF report documenting the entire analysis process
+Creates a professional PDF report documenting the entire analysis process.
 """
 
 import pandas as pd

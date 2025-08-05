@@ -1,7 +1,7 @@
 """
 ETL Pipeline for IT Job Data Analysis
-This script extracts, transforms, and loads IT-relevant job data from multiple CSV files
-to create a consolidated dataset for future analysis and prediction.
+This script extracts, transforms, and, loads IT-relevant job data from multiple CSV files
+to create a consolidated dataset for future analysis and, prediction.
 """
 
 import pandas as pd

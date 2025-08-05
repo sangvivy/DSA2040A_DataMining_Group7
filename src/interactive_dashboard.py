@@ -1,6 +1,6 @@
 """
 Interactive IT Job Market Dashboard
-Beautiful and interactive visualizations using Plotly for comprehensive IT job analysis
+Beautiful and interactive visualizations using Plotly for comprehensive IT job analysis.
 """
 
 import pandas as pd

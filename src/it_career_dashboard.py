@@ -1,5 +1,5 @@
 """
-IT Job Market Forecasting Dashboard & Final Report
+IT Job Market Forecasting Dashboard & Final Report.
 Comprehensive analysis and predictions for IT career opportunities 2025-2030
 """
 
