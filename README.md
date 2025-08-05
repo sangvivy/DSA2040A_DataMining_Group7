@@ -31,8 +31,6 @@ Which companies and roles offer the highest salaries?
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 
 ## ETL Summary 
-Our custom ETL pipeline processed over 200,000 job postings to identify 50,000 IT-relevant positions using sophisticated keyword matching and domain classification. 
-
 ![ETL Summary Results](images/ETL_summary.png)
 
 ### Extract
