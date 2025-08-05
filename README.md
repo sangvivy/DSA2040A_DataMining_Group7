@@ -3,11 +3,11 @@
 # IT Job Market Analysis 2025-2030
 
 #### Members: 
-Vivian (683)
-Faith (954)
-Rosa (699)
-Innocent (513)
-Hans (463)
+- Vivian (683)
+- Faith (954)
+- Rosa (699)
+- Innocent (513)
+- Hans (463)
 
 
 ## 🎯 Project Overview
