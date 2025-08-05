@@ -1,58 +1,134 @@
-# DSA2040A_DataMining_Group7
+### DSA2040A_DataMining_Group7
 
 # IT Job Market Analysis 2025-2030
 
+#### Members: 
+Vivian (683)
+Faith (954)
+Rosa (699)
+Innocent (513)
+Hans (463)
+
+
 ## 🎯 Project Overview
 
-A comprehensive data science project analyzing 50,000+ IT job postings to predict market trends, skill demands, and career opportunities for 2025-2030. This project provides actionable insights for job seekers, employers, and educational institutions through advanced analytics and interactive visualizations.
+A data science project analyzing 50,000+ IT job postings to predict market trends, skill demands, and career opportunities for 2025-2030. This project provides actionable insights for job seekers, employers, and educational institutions through advanced analytics and interactive visualizations.
+
+A comprehensive analysis of the Information Technology (IT) job market to uncover:
+
+What IT domains are most in demand?
+
+Which skills are essential for future readiness?
+
+How will the job market evolve from 2025 to 2030?
+
+Which companies and roles offer the highest salaries?
+
 
 ![Project Banner](https://img.shields.io/badge/Data%20Science-IT%20Job%20Analysis-blue)
 ![Python](https://img.shields.io/badge/Python-3.12+-green)
 ![Machine Learning](https://img.shields.io/badge/ML-Predictive%20Modeling-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-success)
 
-## 📊 Key Achievements
+## ETL Summary 
+Our custom ETL pipeline processed over 200,000 job postings to identify 50,000 IT-relevant positions using sophisticated keyword matching and domain classification. 
+
+![ETL Summary Results](images/ETL_summary.png)
+
+### Extract
+- Loaded multiple CSV files from the `raw/` directory
+- Handled file naming inconsistencies and encoding issues
+
+###  Transform
+- Cleaned column names and standardized formats
+- Merged and normalized data from different sources
+- Handled missing values and removed duplicates
+- Derived useful columns like `country`, `domain`, and `industry`
+
+###  Load 
+In the Load phase of the ETL pipeline, we store the cleaned and transformed data into structured CSV files for future use in data analysis and visualization.
+
+**Output Directory:** `data/transformed/`
+
+**Generated Files:**
+- `processed_it_jobs.csv`: Contains cleaned IT job postings with consistent formatting for columns like job title, location, and date posted.
+- `processed_it_skills.csv`: Includes extracted and standardized skills data suitable for trend analysis and visualization.
+
+
+## 🏗️ Project Structure
+```
+.
+├── dashboards
+│   ├── career_opportunities_dashboard.html
+│   ├── company_analysis_dashboard.html
+│   ├── comprehensive_summary_dashboard.html
+│   ├── dashboard_index.html
+│   ├── domain_analysis_dashboard.html
+│   ├── overview_dashboard.html
+│   ├── predictions_dashboard.html
+│   ├── presentation.html
+│   └── skills_demand_dashboard.html
+│
+├── data
+│   ├── raw
+│   │   ├── companies
+│   │   │   ├── companies.csv
+│   │   │   ├── company_industries.csv
+│   │   │   ├── company_specialities.csv
+│   │   │   └── employee_counts.csv
+│   │   ├── jobs
+│   │   │   ├── benefits.csv
+│   │   │   ├── job_industries.csv
+│   │   │   ├── job_skills.csv
+│   │   │   └── salaries.csv
+│   │   ├── mappings
+│   │   │   ├── industries.csv
+│   │   │   └── skills.csv
+│   │   └── postings.csv
+│   │
+│   └── transformed
+│       ├── companies
+│       │   ├── it_companies.csv
+│       │   ├── it_company_industries.csv
+│       │   ├── it_employee_counts.csv
+│       │   └── it_specialities.csv
+│       ├── jobs
+│       │   ├── it_benefits.csv
+│       │   ├── it_job_industries_cleaned.csv
+│       │   ├── it_job_skills.csv
+│       │   └── it_salaries.csv
+│       ├── mappings
+│       │   └── industries_it_only.csv
+│       └── postings
+│           └── postings_it_cleaned.csv
+│
+├── notebooks
+│   ├── 1_extract_transform.ipynb
+│   └── 2_exploratory_analysis.ipynb
+│
+├── reports
+│   ├── IT_Job_Forecasting_Roadmap_2025-2030.pdf
+│   └── IT_Job_Market_Analysis_Complete_Report.pdf
+│
+├── src
+│   ├── analyze_it_jobs.py
+│   ├── etl_it_jobs.py
+│   ├── generate_comprehensive_report.py
+│   ├── interactive_dashboard.py
+│   ├── it_career_dashboard.py
+│   └── predict_it_trends.py
+│
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+├── processed_it_skills.csv
+└── README.md
 
 - **50,000+** IT job postings analyzed with 99.9% accuracy
 - **7** interactive dashboards with full browser compatibility
 - **5** predictive models with 85%+ accuracy
 - **30-page** comprehensive technical documentation
 - **Professional** HTML presentation for stakeholders
-
-## 🏗️ Project Structure
-
-```
-IT_JOBS_MARKET_ANALYSIS/
-├── 📁 data/
-│   ├── postings.csv                    # Main job postings dataset
-│   ├── processed_it_jobs.csv          # Cleaned IT-specific jobs
-│   ├── processed_it_companies.csv     # Company information
-│   ├── processed_it_skills.csv        # Skills analysis
-│   ├── companies/                     # Company-related data
-│   ├── jobs/                         # Job-specific data
-│   └── mappings/                     # Reference mappings
-├── 📁 src/
-│   ├── etl_it_jobs.py                # ETL pipeline for data processing
-│   ├── analyze_it_jobs.py            # Statistical analysis
-│   ├── interactive_dashboard.py      # Dashboard generation
-│   ├── predict_it_trends.py          # Predictive modeling
-│   └── generate_comprehensive_report.py # PDF report generator
-├── 📁 dashboards/
-│   ├── overview_dashboard.html        # Market overview
-│   ├── domain_analysis_dashboard.html # IT domains analysis
-│   ├── skills_demand_dashboard.html   # Skills demand trends
-│   ├── career_opportunities_dashboard.html # Career paths
-│   ├── company_analysis_dashboard.html # Company insights
-│   ├── predictions_dashboard.html     # Future predictions
-│   └── comprehensive_summary_dashboard.html # Executive summary
-├── 📁 reports/
-│   ├── IT_Job_Market_Analysis_Complete_Report.pdf # Technical report
-│   └── FINAL_REPORT.md               # Executive summary
-├── 📁 presentation/
-│   └── presentation.html             # Interactive HTML presentation
-└── 📁 docs/
-    └── README.md                     # This file
-```
 
 ## 🚀 Quick Start
 
@@ -63,8 +139,8 @@ IT_JOBS_MARKET_ANALYSIS/
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/IRANZI-INNOCENT/IT_JOBS_MARKET_ANALYSIS.git
-cd IT_JOBS_MARKET_ANALYSIS
+git clone https://github.com/sangvivy/DSA2040A_DataMining_Group7.git
+cd DSA2040A_DataMining_Group7
 
 # Install required packages
 pip install pandas numpy scikit-learn plotly dash matplotlib seaborn reportlab
@@ -108,29 +184,28 @@ Data Overview:
 -Analyze work types (Full-time, Contract, Internship)
 -Identify remote vs on-site opportunities
 
-Skill Demand
+- Skill Demand
 
-Count mentions of top IT skills in job titles & descriptions
+- Count mentions of top IT skills in job titles & descriptions
 
-Visualization: Top 15 in-demand skills in a horizontal bar chart
+- Visualization: Top 15 in-demand skills in a horizontal bar chart
 
-Temporal Trends
+- Temporal Trends
 
-Track job postings over time (monthly trends)
+- Track job postings over time (monthly trends)
 
-Compare growth in top IT domains using line plots
+- Compare growth in top IT domains using line plots
 
-Generated Visualizations
--Job Postings
-![alt text](image.png)
 
--Job Title frequency plot
-![alt text](image-1.png)
+## Key Findings
 
--wordcloud
-![alt text](image-2.png)
+### 🔍 Skill Demand Trends
 
-## 📈 Key Findings
+![Skill Demand](images/insight_skill_demand.png)
+
+### 📈 Domain Growth Forecast
+
+![Domain Forecast](images/insight_domain_growth.png)
 
 ### Market Distribution
 - **Data Science & Analytics**: 59.5% (29,744 jobs)
@@ -152,7 +227,7 @@ Generated Visualizations
 - **Cybersecurity**: +111% growth (CAGR: +16.1%)
 - **Software Development**: +42% growth (CAGR: +7.3%)
 
-## 🎛️ Interactive Dashboards
+## Interactive Dashboards
 
 Access our suite of 7 interactive dashboards:
 
@@ -164,7 +239,7 @@ Access our suite of 7 interactive dashboards:
 6. **[Future Predictions](predictions_dashboard.html)** - Market forecasts
 7. **[Executive Summary](comprehensive_summary_dashboard.html)** - Complete overview
 
-## 🧠 Machine Learning Models
+##  Machine Learning Models
 
 | Model | Accuracy | Application | Key Insight |
 |-------|----------|-------------|-------------|
@@ -174,7 +249,7 @@ Access our suite of 7 interactive dashboards:
 | K-Means Clustering | 91% | Role Segmentation | 5 distinct career pathways |
 | Ensemble Methods | 85% | Combined Predictions | Robust market forecasting |
 
-## 📊 Technology Stack
+##  Technology Stack
 
 - **Data Processing**: Python, Pandas, NumPy
 - **Machine Learning**: Scikit-learn, Statistical Modeling
@@ -183,14 +258,14 @@ Access our suite of 7 interactive dashboards:
 - **Documentation**: ReportLab, Markdown
 - **Version Control**: Git, GitHub
 
-## 📝 Documentation
+##  Documentation
 
 - **[Technical Report](IT_Job_Market_Analysis_Complete_Report.pdf)** - 30-page comprehensive analysis
 - **[Executive Summary](FINAL_REPORT.md)** - Key findings and recommendations
 - **[Interactive Presentation](presentation.html)** - 18-slide stakeholder presentation
 - **[Dashboard Index](dashboard_index.html)** - Central access to all dashboards
 
-## 🎯 Strategic Recommendations
+##  Strategic Recommendations
 
 ### For Job Seekers
 - **Immediate (0-3 months)**: Learn Python + SQL, complete AI/ML courses
@@ -205,7 +280,7 @@ Access our suite of 7 interactive dashboards:
 - Establish partnerships with educational institutions for talent pipeline
 - Create competitive compensation packages for high-demand skills
 
-## 🔮 Future Work
+##  Future Work
 
 - **Real-time Data Integration**: Live job posting feeds
 - **International Markets**: Global IT job market comparison
@@ -213,27 +288,13 @@ Access our suite of 7 interactive dashboards:
 - **Mobile Dashboard**: Responsive mobile application
 - **Economic Integration**: GDP and inflation impact modeling
 
-## 👥 Team Contributors
-
-- **Data Engineer**: ETL pipeline design and data architecture
-- **Data Analyst**: Exploratory analysis and statistical modeling
-- **ML Engineer**: Predictive models and algorithm selection
-- **Visualization Specialist**: Dashboard development and UI/UX design
-- **Project Lead**: Project management and quality assurance
-
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📧 Contact
-
-- **Project Repository**: [GitHub](https://github.com/IRANZI-INNOCENT/IT_JOBS_MARKET_ANALYSIS)
-- **Issues**: [GitHub Issues](https://github.com/IRANZI-INNOCENT/IT_JOBS_MARKET_ANALYSIS/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/IRANZI-INNOCENT/IT_JOBS_MARKET_ANALYSIS/discussions)
 
 ---
 
